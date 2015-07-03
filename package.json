@@ -5,18 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-server": "webpack-dev-server --content-base client/static --progress --inline --port 8001"
+    "dev-server": "webpack-dev-server --content-base client/static --progress --inline --host 192.168.135.113 --port 8001"
   },
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "webpack": "~1.5.3",
-    "webpack-dev-server": "~1.7.0",
-    "react": "~0.13.0-beta.1",
-    "jsx-loader": "~0.12.2",
+    "webpack": "~1.10.1",
+    "webpack-dev-server": "~1.10.1",
+    "react": "~0.13.3",
+    "jsx-loader": "~0.13.2",
     "less": "~2.3.1",
     "less-loader": "~2.0.0",
     "css-loader": "~0.9.1",
-    "style-loader": "~0.8.3"
+    "style-loader": "~0.8.3",
+    "firebase": "~2.2.7"
   }
 }
