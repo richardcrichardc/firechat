@@ -7,7 +7,7 @@ module.exports = {
   },
 
   entry: {
-    app: ['entry.jsx']
+    app: ['app.jsx']
   },
 
   output: {
