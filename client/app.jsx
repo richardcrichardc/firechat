@@ -34,7 +34,7 @@ class App extends React.Component {
           <div className="container">
             <div className="navbar-header">
               <a className="navbar-brand" href="#">
-                Community Watsit
+                Community Response (Don't Panic)
               </a>
             </div>
           </div>
