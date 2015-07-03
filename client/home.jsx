@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, DefaultRoute, RouteHandler, Link, default as Router } from 'react-router';
-import { rooms, logs } from './firebase';
+import { rooms, logs } from './base';
 
 export default class Home extends React.Component {
 
@@ -14,19 +14,19 @@ export default class Home extends React.Component {
   }
 
   componentWillUnmount() {
-    rooms.off(); 
+    rooms.off();
   }
 
   render() {
-  
+
     var rooms = [];
     for (var room in this.state.rooms) {
       rooms.push(<li key={room}><Link to="room" params={{room: room}}>{room}</Link></li>)
     }
-  
+
     return <div>
       <h3>Rooms</h3>
-      
+
       <ul>
         {rooms}
       </ul>

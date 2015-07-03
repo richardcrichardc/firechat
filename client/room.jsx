@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, DefaultRoute, RouteHandler, Link, default as Router } from 'react-router';
-import { rooms, logs } from './firebase';
+import { rooms, logs } from './base';
 
 export default class Room extends React.Component {
 
@@ -8,8 +8,8 @@ export default class Room extends React.Component {
     super(props);
 
     this.log = logs.child(props.params.room);
-    
-    this.state = { 
+
+    this.state = {
       log: []
     };
 

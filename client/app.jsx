@@ -2,7 +2,8 @@ import "./style.less";
 
 import React from 'react';
 import { Route, DefaultRoute, RouteHandler, Link, default as Router } from 'react-router';
-import { rooms, logs } from './firebase';
+import { rooms, logs } from './base';
+import user from './auth';
 
 class App extends React.Component {
   render() {
